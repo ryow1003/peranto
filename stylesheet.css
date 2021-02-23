@@ -114,6 +114,7 @@ header{
   text-align: right;
   display: flex;
   align-items: center;
+  background-color: #ffffff;
 }
 header img{
   height: 50px;
@@ -352,7 +353,7 @@ header a:hover{
 /* second-wrapper */
 .second-wrapper{
   width: 90%;
-  margin: 50px 5% 50px 5%;
+  margin: 50px 5% 0 5%;
   text-align: center;
   font-family: 'Sawarabi Mincho', sans-serif;
   font-weight: 100;
@@ -496,79 +497,6 @@ header a:hover{
   width:100%;
 }
 
-/* principle */
-/* .principle{
-  background-color: #F5F4F4;
-  width:100%;
-  max-width: 100%;
-  position: relative;
-}
-.principle h1{
-  font-size: 80px;
-  color:white;
-  position: absolute;
-  top:50px;
-  left: 0;
-  right:0;
-  z-index: 1000;
-  text-align: center;
-}
-.principle img{
-  width: 100%;
-  height:700px;
-  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
-} */
-
-
-/*ROAD AND CARS*/
-
-/* .a-c {
-  margin: 0;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.a-c .asph {
-  background-color: grey;
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0;
-  line-height: 70px;
-}
-.a-c .road {
-  z-index: 100;
-  margin: 0;
-  position: absolute;
-  top: 5px;
-  display: inline-block;
-  padding-left: 100%;
-  white-space: nowrap;
-  line-height: 1em;
-  animation: bunbuncar 20s linear infinite;
-}
-.a-c .road p {
-  display: inline;
-  margin: 0 150px 0 0;
-}
-.a-c .road p img {
-  width: 100px;
-  height: 50px;
-}
-
-.object {
-  width: 100px;
-  height: 65px;
-}
-
-@keyframes bunbuncar {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} */
 
 
 /* RECOMMEND */
@@ -585,14 +513,230 @@ header a:hover{
   width:50%;
   font-family:serif;
   color: #565656;
-  text-align: center
+  padding:150px 0 0 0;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 15px;
+}
+.recommend h2 span{
+  color:#3991C8;
+  background:linear-gradient(transparent 70%,#bce0f7 70%);
 }
 .recommend svg{
   width: 100%;
 }
 
 
+/* PONTO */
+.before-ponto{
+  background-color: #bce0f7;
+}
+.ponto{
+  width:100%;
+  background-color: #bce0f7;
+}
+.ponto h2{
+  width:500px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-weight: 100;
+  position: relative;
+  margin:0 auto;
+  padding: 0.5em;
+  background: linear-gradient(145deg, #3238c3, #2a2fa4);
+  color: white;
+}
+.ponto h2::before{
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #03034D;
+}
+.inner{
+  width:80%;
+  padding:50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content{
+  width:40%;
+  margin:0 5% 80px 5%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: serif;
+}
+video{
+  width:100%;
+}
+.content h3{
+  background: linear-gradient(145deg, #3238c3, #2a2fa4);
+  color:#fff;
+  margin: 0 auto;
+  padding:5px 10px;
+}
+.content p{
+  padding: 20px;
+}
 
+
+
+/* TWITTER */
+.before-twitter{
+  background-color: #1DA1F2;
+}
+.twitter{
+  height:500px;
+  background-color: #1DA1F2;
+}
+
+
+/* TOPIC */
+.topic{
+  width:100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.topic-title{
+  display: flex;
+  flex-direction: column;
+}
+.topic-title p:nth-child(1){
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin: 0 auto;
+  background-color: white;
+  color:#565656;
+  display: inline-block;
+  padding:10px 20px;
+  box-shadow: 5px 5px 7px #d4d4d4, -5px -5px 7px #ffffff;
+}
+.topic-title p:nth-child(2){
+  letter-spacing: 5px;
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+}
+.topic-title p:nth-child(2):before,.topic-title p:nth-child(2):after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 300px;
+  height: 2px;
+  border-top: solid 2px #565656;
+  border-bottom: solid 2px #565656;
+}
+.topic-title p:nth-child(2):before{
+  left: 0;
+}
+.topic-title p:nth-child(2):after{
+  right:0;
+}
+.articles{
+  width:80%;
+  padding:0 10%;
+  display: flex;
+}
+.articles a{
+  width:30%;
+  margin:30px 1.5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  background-color: #fff;
+  box-shadow: 5px 5px 7px #d4d4d4, -5px -5px 7px #ffffff;
+
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.articles a:hover,.articles a:focus,.articles a:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+}
+.articles a img{
+  width:100%;
+}
+.tag{
+  width:90%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  padding: 10px 5%;
+  justify-content: space-between;
+}
+.tag p:nth-child(1){
+  color:#fff;
+  background: linear-gradient(145deg, #1e39ff, #1930da);
+  border-radius:20px;
+  padding:5px 10px;
+  font-size: 20px;
+}
+.text{
+  padding:20px 5%;
+}
+.topic-btn {
+  margin:40px 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+.topic-btn a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  line-height: 50px;
+  overflow: hidden;
+}
+.topic-btn a::before,.topic-btn a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.topic-btn a,.topic-btn a::before,.topic-btn a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.topic-btn a:hover {
+  color: #fff;
+}
+.topic-btn a::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topic-btn a:hover::after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  background: #333;
+}
 
 
 
@@ -607,9 +751,9 @@ header a:hover{
 
 .a{
   height:500px;
-  background-color: aqua;
+  margin-top: 100px;
+  background-color:#3991C8;
 }
-
 
 
 
