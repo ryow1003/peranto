@@ -760,6 +760,11 @@ video{
   padding:5px 10px;
   font-size: 20px;
 }
+.tag p span{
+  font-size: 120%;
+  font-family: serif;
+  margin-right: 10px;
+}
 .text{
   padding:20px 5% 40px 5%;
   color: #565656;
