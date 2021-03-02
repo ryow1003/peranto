@@ -396,14 +396,6 @@ header a:hover{
   border-radius: 50px;
   background: linear-gradient(145deg, #1e39ff, #1930da);
 }
-.second-wrapper p:nth-child(4){
-  font-size: 30px;
-  color:#3991C8;
-  border-bottom: solid;
-  padding: 0;
-  margin: 0 0 30px 40px;
-  display: inline-block;
-}
 
 /* button */
 .p-button {
